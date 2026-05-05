@@ -15,14 +15,18 @@ body{
   overflow-x:hidden;
 }
 
-/* BACKGROUND */
+/* =========================
+   BACKGROUND
+========================= */
 
 .background-blur{
   position:fixed;
+
   width:700px;
   height:700px;
 
-  background:radial-gradient(
+  background:
+  radial-gradient(
     circle,
     rgba(255,157,47,0.25),
     transparent 70%
@@ -44,7 +48,8 @@ body{
 
   border-radius:50%;
 
-  background:rgba(127,223,255,0.12);
+  background:
+  rgba(127,223,255,0.12);
 
   filter:blur(80px);
 
@@ -71,10 +76,13 @@ body{
 
 }
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+========================= */
 
 header{
   position:fixed;
+
   top:0;
   left:0;
 
@@ -82,7 +90,8 @@ header{
 
   z-index:1000;
 
-  background:rgba(0,0,0,0.35);
+  background:
+  rgba(0,0,0,0.35);
 
   backdrop-filter:blur(12px);
 
@@ -92,7 +101,9 @@ header{
 
 .navbar{
   display:flex;
+
   justify-content:space-between;
+
   align-items:center;
 
   padding:20px 8%;
@@ -100,10 +111,13 @@ header{
 
 .logo{
   display:flex;
+
   align-items:center;
+
   gap:12px;
 
   font-size:26px;
+
   font-weight:700;
 
   color:#7fdfff;
@@ -120,6 +134,7 @@ header{
 
 .nav-links{
   display:flex;
+
   gap:30px;
 
   list-style:none;
@@ -139,13 +154,17 @@ header{
   color:#ff9d2f;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero{
   min-height:100vh;
 
   display:flex;
+
   justify-content:space-between;
+
   align-items:center;
 
   gap:60px;
@@ -161,6 +180,7 @@ header{
   flex:1;
 
   display:flex;
+
   justify-content:center;
 }
 
@@ -171,7 +191,8 @@ header{
 
   border-radius:30px;
 
-  background:rgba(127,223,255,0.1);
+  background:
+  rgba(127,223,255,0.1);
 
   color:#7fdfff;
 
@@ -204,14 +225,21 @@ header{
 
 .hero-buttons{
   display:flex;
+
   gap:20px;
 
   flex-wrap:wrap;
 }
 
-/* BUTTONS */
+/* =========================
+   BUTTONS
+========================= */
 
 .btn{
+  position:relative;
+
+  overflow:hidden;
+
   padding:15px 30px;
 
   border-radius:14px;
@@ -224,7 +252,8 @@ header{
 }
 
 .primary{
-  background:linear-gradient(
+  background:
+  linear-gradient(
     45deg,
     #ff9d2f,
     #ffb347
@@ -248,11 +277,13 @@ header{
 
 .secondary:hover{
   background:#7fdfff;
+
   color:black;
 }
 
 .discord-btn{
-  background:linear-gradient(
+  background:
+  linear-gradient(
     45deg,
     #5865F2,
     #7289DA
@@ -265,10 +296,38 @@ header{
   transform:translateY(-5px);
 }
 
-/* HERO IMAGE */
+/* RIPPLE */
+
+.ripple{
+  position:absolute;
+
+  border-radius:50%;
+
+  transform:scale(0);
+
+  animation:rippleAnim 0.6s linear;
+
+  background:
+  rgba(255,255,255,0.5);
+}
+
+@keyframes rippleAnim{
+
+  to{
+    transform:scale(4);
+
+    opacity:0;
+  }
+
+}
+
+/* =========================
+   HERO IMAGE
+========================= */
 
 .hero-image{
   width:100%;
+
   max-width:550px;
 
   border-radius:30px;
@@ -281,7 +340,9 @@ header{
   transition:0.4s;
 }
 
-/* SECTIONS */
+/* =========================
+   SECTIONS
+========================= */
 
 .features,
 .gallery,
@@ -311,7 +372,9 @@ header{
   margin-top:10px;
 }
 
-/* FEATURES */
+/* =========================
+   FEATURES
+========================= */
 
 .feature-grid{
   display:grid;
@@ -327,7 +390,8 @@ header{
 
   border-radius:24px;
 
-  background:rgba(255,255,255,0.05);
+  background:
+  rgba(255,255,255,0.05);
 
   border:
   1px solid rgba(255,255,255,0.08);
@@ -353,7 +417,9 @@ header{
   margin-bottom:15px;
 }
 
-/* GALLERY */
+/* =========================
+   GALLERY
+========================= */
 
 .gallery-grid{
   display:grid;
@@ -379,7 +445,9 @@ header{
   transform:scale(1.03);
 }
 
-/* STATS */
+/* =========================
+   STATS
+========================= */
 
 .stats{
   padding:50px 8%;
@@ -399,7 +467,8 @@ header{
 
   text-align:center;
 
-  background:rgba(255,255,255,0.05);
+  background:
+  rgba(255,255,255,0.05);
 }
 
 .stat-card h2{
@@ -410,7 +479,9 @@ header{
   margin-bottom:10px;
 }
 
-/* TEAM */
+/* =========================
+   TEAM
+========================= */
 
 .team-grid{
   display:grid;
@@ -428,7 +499,8 @@ header{
 
   text-align:center;
 
-  background:rgba(255,255,255,0.05);
+  background:
+  rgba(255,255,255,0.05);
 
   border:
   1px solid rgba(255,255,255,0.08);
@@ -463,7 +535,9 @@ header{
   color:#d0d9e4;
 }
 
-/* DISCORD */
+/* =========================
+   DISCORD
+========================= */
 
 .discord-box{
   max-width:800px;
@@ -476,7 +550,8 @@ header{
 
   text-align:center;
 
-  background:rgba(255,255,255,0.05);
+  background:
+  rgba(255,255,255,0.05);
 
   border:
   1px solid rgba(255,255,255,0.08);
@@ -496,7 +571,9 @@ header{
   line-height:1.8;
 }
 
-/* CTA */
+/* =========================
+   CTA
+========================= */
 
 .cta{
   text-align:center;
@@ -514,7 +591,9 @@ header{
   margin-bottom:35px;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer{
   padding:40px 8%;
@@ -541,7 +620,9 @@ footer{
   color:#ffb347;
 }
 
-/* COOKIE */
+/* =========================
+   COOKIE POPUP
+========================= */
 
 .cookie-popup{
   position:fixed;
@@ -551,6 +632,7 @@ footer{
   right:20px;
 
   display:flex;
+
   justify-content:center;
 
   z-index:9999;
@@ -565,7 +647,8 @@ footer{
 
   text-align:center;
 
-  background:rgba(8,17,31,0.95);
+  background:
+  rgba(8,17,31,0.95);
 
   border:
   1px solid rgba(255,255,255,0.08);
@@ -592,7 +675,8 @@ footer{
 
   border-radius:12px;
 
-  background:linear-gradient(
+  background:
+  linear-gradient(
     45deg,
     #ff9d2f,
     #ffb347
@@ -605,7 +689,9 @@ footer{
   cursor:pointer;
 }
 
-/* REVEAL */
+/* =========================
+   REVEAL
+========================= */
 
 .reveal{
   opacity:0;
@@ -621,12 +707,15 @@ footer{
   transform:translateY(0);
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:950px){
 
   .hero{
     flex-direction:column;
+
     text-align:center;
   }
 
@@ -644,11 +733,13 @@ footer{
 
   .navbar{
     flex-direction:column;
+
     gap:20px;
   }
 
   .nav-links{
     flex-wrap:wrap;
+
     justify-content:center;
   }
 
