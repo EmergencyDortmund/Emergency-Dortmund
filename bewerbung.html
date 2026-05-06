@@ -33,65 +33,44 @@ body{
   position:fixed;
   width:700px;
   height:700px;
-
   background:
   radial-gradient(
     circle,
     rgba(255,157,47,0.25),
     transparent 70%
   );
-
   top:-250px;
   right:-200px;
-
   z-index:-2;
 }
 
 .mouse-glow{
   position:fixed;
-
   width:250px;
   height:250px;
-
   border-radius:50%;
-
-  background:
-  rgba(127,223,255,0.12);
-
+  background:rgba(127,223,255,0.12);
   filter:blur(80px);
-
   pointer-events:none;
-
   transform:translate(-50%,-50%);
-
   z-index:-1;
 }
 
 header{
   position:fixed;
-
   top:0;
   left:0;
-
   width:100%;
-
   z-index:999;
-
-  background:
-  rgba(0,0,0,0.35);
-
+  background:rgba(0,0,0,0.35);
   backdrop-filter:blur(12px);
-
-  border-bottom:
-  1px solid rgba(255,255,255,0.08);
+  border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
 .navbar{
   display:flex;
-
   justify-content:space-between;
   align-items:center;
-
   padding:20px 8%;
 }
 
@@ -99,24 +78,20 @@ header{
   display:flex;
   align-items:center;
   gap:12px;
-
   font-size:24px;
   font-weight:700;
-
   color:#7fdfff;
 }
 
 .logo-img{
   width:45px;
   height:45px;
-
   border-radius:50%;
 }
 
 .nav-links{
   display:flex;
   gap:25px;
-
   list-style:none;
 }
 
@@ -132,28 +107,19 @@ header{
 
 .hero{
   min-height:60vh;
-
   display:flex;
   justify-content:center;
   align-items:center;
-
   text-align:center;
-
   padding:140px 8% 80px;
 }
 
 .badge{
   display:inline-block;
-
   padding:10px 18px;
-
   border-radius:30px;
-
-  background:
-  rgba(127,223,255,0.1);
-
+  background:rgba(127,223,255,0.1);
   color:#7fdfff;
-
   margin-bottom:25px;
 }
 
@@ -195,133 +161,93 @@ header{
 
 .application-grid{
   display:grid;
-
   grid-template-columns:
   repeat(auto-fit,minmax(280px,1fr));
-
   gap:30px;
 }
 
 .apply-card{
   position:relative;
-
   padding:40px;
-
   border-radius:28px;
-
   overflow:hidden;
-
-  background:
-  rgba(255,255,255,0.05);
-
-  border:
-  1px solid rgba(255,255,255,0.08);
-
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
   transition:0.4s;
-
   text-align:center;
-
   backdrop-filter:blur(12px);
 }
 
 .apply-card:hover{
   transform:translateY(-10px);
-
   border-color:#ff9d2f;
-
   box-shadow:
   0 0 30px rgba(255,157,47,0.2);
 }
 
 .job-status{
   display:inline-block;
-
   padding:10px 18px;
-
   border-radius:40px;
-
   font-size:13px;
-
   font-weight:700;
-
   margin-bottom:20px;
 }
 
 .open-status{
   background:
   rgba(255,157,47,0.15);
-
   color:#ffb347;
 }
 
 .apply-card h3{
   font-size:32px;
-
   margin-bottom:10px;
-
   color:#ffb347;
 }
 
 .apply-card p{
   color:#d0d9e4;
-
   margin-bottom:25px;
 }
 
 .open-form-btn{
   width:100%;
-
   border:none;
-
   padding:16px;
-
   border-radius:16px;
-
   background:
   linear-gradient(
     45deg,
     #ff9d2f,
     #ffb347
   );
-
   color:white;
-
   font-weight:700;
-
   cursor:pointer;
-
   transition:0.3s;
 }
 
 .open-form-btn:hover{
   transform:translateY(-4px);
-
   box-shadow:
   0 0 25px rgba(255,157,47,0.35);
 }
 
 .popup-form{
   position:fixed;
-
   top:0;
   left:0;
-
   width:100%;
   height:100%;
-
   background:
   rgba(0,0,0,0.75);
-
   display:flex;
-
   justify-content:center;
   align-items:center;
-
   opacity:0;
   visibility:hidden;
-
   transition:0.3s;
-
   z-index:99999;
 }
 
@@ -333,65 +259,45 @@ header{
 .popup-box{
   width:90%;
   max-width:650px;
-
   max-height:90vh;
-
   overflow-y:auto;
-
   padding:40px;
-
   border-radius:28px;
-
   background:#101b2e;
-
   border:
   1px solid rgba(255,255,255,0.08);
-
   position:relative;
 }
 
 .close-popup{
   position:absolute;
-
   top:18px;
   right:22px;
-
   cursor:pointer;
-
   font-size:22px;
 }
 
 .popup-box h2{
   margin-bottom:25px;
-
   color:#ffb347;
 }
 
 .popup-box form{
   display:flex;
-
   flex-direction:column;
-
   gap:18px;
 }
 
 .popup-box input,
 .popup-box textarea{
   width:100%;
-
   padding:16px;
-
   border:none;
-
   border-radius:14px;
-
   background:
   rgba(255,255,255,0.08);
-
   color:white;
-
   outline:none;
-
   font-family:'Poppins',sans-serif;
 }
 
@@ -402,22 +308,16 @@ header{
 
 .popup-box button{
   border:none;
-
   padding:16px;
-
   border-radius:14px;
-
   background:
   linear-gradient(
     45deg,
     #ff9d2f,
     #ffb347
   );
-
   color:white;
-
   font-weight:700;
-
   cursor:pointer;
 }
 
@@ -425,6 +325,26 @@ header{
   display:flex;
   flex-direction:column;
   gap:18px;
+}
+
+#imagePreview{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.preview-image{
+  width:100px;
+  height:100px;
+  border-radius:12px;
+  object-fit:cover;
+}
+
+#wordCounter{
+  text-align:right;
+  font-size:14px;
+  color:#d0d9e4;
+  margin-top:-10px;
 }
 
 @media(max-width:700px){
@@ -460,7 +380,7 @@ header{
 <div class="logo">
 
 <img
-src="https://media.discordapp.net/attachments/1493311667008831699/1497679529953726666/logo_ed_512.png?ex=69fc3e01&is=69faec81&hm=81a298f5e2b6f45f54019f173b83fa4e99f948a223a4961e307ef3fbd646ee0b&=&format=webp&quality=lossless"
+src="https://media.discordapp.net/attachments/1493311667008831699/1497679529953726666/logo_ed_512.png"
 class="logo-img">
 
 <span>Emergency Dortmund</span>
@@ -596,11 +516,33 @@ required>
 <input
 type="number"
 placeholder="Alter"
+id="ageInput"
 required>
 
+<div id="ageConfirmWrapper" style="display:none;">
+
+<label style="display:flex;align-items:center;gap:10px;color:#d0d9e4;">
+
+<input
+type="checkbox"
+id="ageConfirm">
+
+<span id="ageConfirmText">
+Mindestalter bestätigt
+</span>
+
+</label>
+
+</div>
+
 <textarea
-placeholder="Erzähle etwas über dich"
+placeholder="Erzähle etwas über dich (max. 400 Wörter)"
+id="aboutText"
 required></textarea>
+
+<div id="wordCounter">
+0 / 400 Wörter
+</div>
 
 <div id="extraQuestions"></div>
 
@@ -611,9 +553,12 @@ Portfolio / Bilder hochladen
 </label>
 
 <input
+id="developerFiles"
 type="file"
 accept="image/*"
 multiple>
+
+<div id="imagePreview"></div>
 
 </div>
 
@@ -629,13 +574,8 @@ Bewerbung Senden
 
 <script>
 
-
-
 const webhookURL =
 "https://discord.com/api/webhooks/1501296229420761148/8C8_YEWJeNf6MYMtdw9AVTaZsCiA-fbIT76MByjdMhmE8XbdTt29x49jL7SSUmZCP8vB";
-
-
-
 
 const popup =
 document.getElementById('popupForm');
@@ -661,8 +601,26 @@ document.getElementById('selectedRole');
 const buttons =
 document.querySelectorAll('.open-form-btn');
 
+const imagePreview =
+document.getElementById('imagePreview');
 
+const developerFiles =
+document.getElementById('developerFiles');
 
+const ageConfirmWrapper =
+document.getElementById('ageConfirmWrapper');
+
+const ageConfirmText =
+document.getElementById('ageConfirmText');
+
+const ageConfirm =
+document.getElementById('ageConfirm');
+
+const aboutText =
+document.getElementById('aboutText');
+
+const wordCounter =
+document.getElementById('wordCounter');
 
 const glow =
 document.querySelector('.mouse-glow');
@@ -679,9 +637,6 @@ window.addEventListener(
 
 }
 );
-
-
-
 
 const roleQuestions = {
 
@@ -715,8 +670,6 @@ Tester:[
 
 };
 
-
-
 buttons.forEach((button)=>{
 
 button.addEventListener(
@@ -744,19 +697,34 @@ button.addEventListener(
   roleQuestions[role]
   .forEach((question)=>{
 
+    const wrapper =
+    document.createElement('div');
+
+    const label =
+    document.createElement('label');
+
+    label.style.color =
+    '#ffb347';
+
+    label.innerText =
+    question;
+
     const textarea =
     document.createElement(
       'textarea'
     );
 
     textarea.placeholder =
-    question;
+    'Antwort eingeben...';
 
     textarea.required =
     true;
 
+    wrapper.appendChild(label);
+    wrapper.appendChild(textarea);
+
     extraQuestions.appendChild(
-      textarea
+      wrapper
     );
 
   });
@@ -766,10 +734,43 @@ button.addEventListener(
     developerUpload.style.display =
     'block';
 
-  }else{
+    ageConfirmWrapper.style.display =
+    'block';
+
+    ageConfirm.required =
+    true;
+
+    ageConfirmText.innerText =
+    'Ich bestätige mindestens 15 Jahre alt zu sein';
+
+  }
+
+  else if(role === 'Moderator'){
 
     developerUpload.style.display =
     'none';
+
+    ageConfirmWrapper.style.display =
+    'block';
+
+    ageConfirm.required =
+    true;
+
+    ageConfirmText.innerText =
+    'Ich bestätige mindestens 13 Jahre alt zu sein';
+
+  }
+
+  else{
+
+    developerUpload.style.display =
+    'none';
+
+    ageConfirmWrapper.style.display =
+    'none';
+
+    ageConfirm.required =
+    false;
 
   }
 
@@ -778,8 +779,92 @@ button.addEventListener(
 
 });
 
+aboutText.addEventListener(
+'input',
+()=>{
 
+  let words =
+  aboutText.value
+  .trim()
+  .split(/\s+/)
+  .filter(word => word.length > 0);
 
+  if(words.length > 400){
+
+    words =
+    words.slice(0,400);
+
+    aboutText.value =
+    words.join(' ');
+
+  }
+
+  const count =
+  aboutText.value.trim() === ''
+  ? 0
+  : aboutText.value
+      .trim()
+      .split(/\s+/)
+      .filter(word => word.length > 0)
+      .length;
+
+  wordCounter.innerText =
+  `${count} / 400 Wörter`;
+
+  if(count >= 400){
+
+    wordCounter.style.color =
+    '#ff4d4d';
+
+  }else{
+
+    wordCounter.style.color =
+    '#d0d9e4';
+
+  }
+
+}
+);
+
+developerFiles.addEventListener(
+'change',
+()=>{
+
+imagePreview.innerHTML = '';
+
+const files =
+developerFiles.files;
+
+for(let file of files){
+
+  const reader =
+  new FileReader();
+
+  reader.onload =
+  (e)=>{
+
+    const img =
+    document.createElement('img');
+
+    img.src =
+    e.target.result;
+
+    img.classList.add(
+      'preview-image'
+    );
+
+    imagePreview.appendChild(
+      img
+    );
+
+  };
+
+  reader.readAsDataURL(file);
+
+}
+
+}
+);
 
 closePopup.addEventListener(
 'click',
@@ -791,9 +876,6 @@ popup.classList.remove(
 
 }
 );
-
-
-
 
 form.addEventListener(
 'submit',
@@ -815,17 +897,41 @@ try{
   )[1].value;
 
   const age =
-  form.querySelectorAll(
-    'input'
-  )[2].value;
+  document.getElementById(
+    'ageInput'
+  ).value;
 
   const about =
-  form.querySelector(
-    'textarea'
-  ).value;
+  aboutText.value;
 
   const role =
   selectedRole.value;
+
+  if(role === 'Moderator' && age < 13){
+
+    alert(
+      'Moderatoren müssen mindestens 13 Jahre alt sein!'
+    );
+
+    button.innerHTML =
+    'Bewerbung Senden';
+
+    return;
+
+  }
+
+  if(role === 'Developer' && age < 15){
+
+    alert(
+      'Developer müssen mindestens 15 Jahre alt sein!'
+    );
+
+    button.innerHTML =
+    'Bewerbung Senden';
+
+    return;
+
+  }
 
   const questions =
   extraQuestions
@@ -833,13 +939,44 @@ try{
     'textarea'
   );
 
-  let answers = '';
+  let fields = [
+
+    {
+      name:'👤 Discord',
+      value:discordName,
+      inline:true
+    },
+
+    {
+      name:'🎂 Alter',
+      value:age,
+      inline:true
+    },
+
+    {
+      name:'💼 Rolle',
+      value:role
+    },
+
+    {
+      name:'📝 Über Mich',
+      value:about || 'Keine Angabe'
+    }
+
+  ];
 
   questions.forEach(
     (q,index)=>{
 
-      answers +=
-      `Frage ${index+1}:\n${q.value}\n\n`;
+      const frage =
+      roleQuestions[role][index];
+
+      fields.push({
+
+        name:`❓ ${frage}`,
+        value:q.value || 'Keine Antwort'
+
+      });
 
     }
   );
@@ -858,63 +995,7 @@ try{
 
         color:16753920,
 
-        fields:[
-
-          {
-
-            name:
-            '👤 Discord',
-
-            value:
-            discordName,
-
-            inline:true
-
-          },
-
-          {
-
-            name:
-            '🎂 Alter',
-
-            value:
-            age,
-
-            inline:true
-
-          },
-
-          {
-
-            name:
-            '💼 Rolle',
-
-            value:
-            role
-
-          },
-
-          {
-
-            name:
-            '📝 Über Mich',
-
-            value:
-            about
-
-          },
-
-          {
-
-            name:
-            '📋 Antworten',
-
-            value:
-            answers || 'Keine'
-
-          }
-
-        ],
+        fields:fields,
 
         footer:{
 
@@ -977,6 +1058,15 @@ try{
     extraQuestions.innerHTML =
     '';
 
+    imagePreview.innerHTML =
+    '';
+
+    wordCounter.innerText =
+    '0 / 400 Wörter';
+
+    wordCounter.style.color =
+    '#d0d9e4';
+
     button.innerHTML =
     'Bewerbung Senden';
 
@@ -988,6 +1078,10 @@ try{
 }catch(error){
 
   console.log(error);
+
+  alert(
+    'Failed to fetch → Webhook falsch oder CORS Fehler.'
+  );
 
   button.innerHTML =
   '❌ Fehler';
@@ -1001,3 +1095,4 @@ try{
 
 </body>
 </html>
+
